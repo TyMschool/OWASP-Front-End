@@ -29,5 +29,5 @@ Demo credentials: `user@example.com` / `Sup3rSecret!`
 ## Security notes
 
 - Passwords are hashed with **bcrypt** (cost factor 12) before being stored or compared — plaintext passwords are never kept anywhere.
-- The success message is written with `textContent`, not `innerHTML`, so a value like `<script>alert(1)</script>` typed into the email field is rendered as inert text, not executed — this is what was tested in the Part 3 exploitation writeup.
+- The success message is written with `textContent`, not `innerHTML`, so a value like `<script>alert(1)</script>` typed into the email field is rendered as inert text, not executed.
 - This is a teaching artifact, not production code: it has no CSRF protection, rate limiting, or persistent database.

@@ -1,0 +1,13 @@
+{
+  "name": "secure-login-form",
+  "version": "1.0.0",
+  "description": "Minimal login form demo with client- and server-side validation plus bcrypt password hashing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2"
+  }
+}
